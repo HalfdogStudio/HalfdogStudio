@@ -1,0 +1,43 @@
+body {
+    perspective: 800px;
+    padding: 40px;
+}
+#id {
+    transform-style: preserve-3d;
+    position: absolute;
+    width: 150px;
+    margin-left: -64px;
+    left: 50%;
+    transition: all 0.5s ease-in-out;
+}
+
+
+div {
+    position: absolute;
+    background-color: lightgreen;
+    color: Yellow;
+    width: 128px;
+    text-align: center;
+    padding: auto;
+}
+
+div:nth-child(1) {
+    transform: rotateY(0deg) translateZ(109.8px);
+}
+div:nth-child(2) {
+    transform: rotateY(72deg) translateZ(109.8px);
+}
+div:nth-child(3) {
+    transform: rotateY(144deg) translateZ(109.8px);
+}
+div:nth-child(4) {
+    transform: rotateY(216deg) translateZ(109.8px);
+}
+div:nth-child(5) {
+    transform: rotateY(288deg) translateZ(109.8px);
+}
+
+h1 {
+    margin-top: 150px;
+    text-align: center;
+}

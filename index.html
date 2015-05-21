@@ -6,70 +6,79 @@
         <meta charset="utf-8">
         <meta http-equiv="description" content="We are half dogs, anyway, small but strong. Site to sight our creativity, love, and enthusiams" />
         <meta http-equiv="keywords" content="hack" />
-        <meta http-equiv="author" content="Liu Yuyang" />
+        <meta http-equiv="author" content="reverland" />
+        <link rel="stylesheet" href="style/style.css" type="text/css" media="all" />
     </head>
     <body>
-    <style type="text/css" media="all">
-h1 {
-    margin: 100px;
-    text-shadow: 0 0 8px darkgray;
-    color: gray;
-}
-
-h1{
-    -webkit-animation: 0.1s blink step-end infinite;
-    -moz-animation: 0.1s blink step-end infinite;
-    -ms-animation: 0.1s blink step-end infinite;
-    -o-animation: 0.1s blink step-end infinite;
-    animation: 0.1s blink step-end infinite;
-}
-
-@keyframes "blink" {
-    from,to {
-        text-shadow:0 0 8px lightgray;
-        color: gray;
-        margin: 101px;
-    }
-    25% {
-        text-shadow: 0 0 8px darkgray;
-        color: gray;
-        margin: 99px;
-    }
-    50% {
-        text-shadow: 0 0 8px gray;
-        color: darkgray;
-        margin: 100px;
-    }
-    75% {
-        text-shadow: 0 0 8px gray;
-        color: lightgray;
-        margin: 99px;
-    }
-}
-
-@-moz-keyframes blink {
-    from,to {
-        text-shadow:0 0 8px lightgray;
-        color: gray;
-        margin: 101px;
-    }
-    25% {
-        text-shadow: 0 0 8px darkgray;
-        color: gray;
-        margin: 99px;
-    }
-    50% {
-        text-shadow: 0 0 8px gray;
-        color: darkgray;
-        margin: 100px;
-    }
-    75% {
-        text-shadow: 0 0 8px gray;
-        color: gray;
-        margin: 99px;
-    }
-}
-    </style>
-    <h1>TO BE EXPECTED!</h1>
+    <div id="id">
+        <div>
+            <h2>Who</h2>
+            <p>快乐草尼码</p>
+        </div>
+        <div>
+            <h2>What</h2>
+            <p>打到蒋介石</p>
+        </div>
+        <div>
+            <h2>Where</h2>
+            <p>明光村幼儿园</p>
+        </div>
+        <div>
+            <h2>When</h2>
+            <p>永和九年</p>
+        </div>
+        <div>
+            <h2>Why</h2>
+            <p>热爱生命</p>
+        </div>
+    </div>
+        <h1>半条汪工作室</h1>
+    <script>
+    var nav = document.getElementById("id");
+    var who = nav.children[0]
+    var what = nav.children[1]
+    var where = nav.children[2]
+    var when = nav.children[3]
+    var why = nav.children[4]
+    nav.addEventListener("mousewheel", function(e){
+            if (e.wheelDelta > 0) {
+            switch(e.target) {
+                case who:
+                    nav.style.transform = "rotateY(72deg)";
+                    break;
+                case what:
+                    nav.style.transform = "rotateY(0deg)";
+                    break;
+                case where:
+                    nav.style.transform = "rotateY(288deg)";
+                    break;
+                case when:
+                    nav.style.transform = "rotateY(216deg)";
+                    break;
+                case why:
+                    nav.style.transform = "rotateY(144deg)";
+                    break;
+            }
+            } else if (e.wheelDelta < 0) {
+            switch(e.target) {
+                case who:
+                    nav.style.transform = "rotateY(-72deg)";
+                    break;
+                case what:
+                    nav.style.transform = "rotateY(-144deg)";
+                    break;
+                case where:
+                    nav.style.transform = "rotateY(-216deg)";
+                    break;
+                case when:
+                    nav.style.transform = "rotateY(-288deg)";
+                    break;
+                case why:
+                    nav.style.transform = "rotateY(0deg)";
+                    break;
+            }
+            }
+            }, false)
+    </script>
     </body>
 </html>
